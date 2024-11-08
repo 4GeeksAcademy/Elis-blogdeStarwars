@@ -12,10 +12,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
-			]
+			],
+			favorites: [] // Añade favorites como un array vacío aquí
 		},
 		actions: {
-			// Use getActions to call a function within a fuction
+			// Use getActions to call a function within a function
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
 			},
